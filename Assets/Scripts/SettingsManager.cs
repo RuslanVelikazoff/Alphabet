@@ -6,6 +6,7 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private Button openSettingsButton;
     [SerializeField] private Button closeSettingsButton;
     [SerializeField] private GameObject settingsPanel;
+    [SerializeField] private GameObject mainPanel;
 
     [Space(7)]
 
@@ -14,24 +15,28 @@ public class SettingsManager : MonoBehaviour
     [SerializeField] private Sprite onSprite;
     [SerializeField] private Sprite offSprite;
 
-    public void Initialize()
+    private UIAnimations animations;
+
+    public void Initialize(UIAnimations UIAnimations)
     {
-        settingsPanel.SetActive(false);
+        animations = UIAnimations;
 
         SetSprites();
 
         ButtonClickAction();
+
+        Debug.Log("SettingsManager initialized");
     }
 
     private void ButtonClickAction()
     {
-        //TODO: add animations
         if (openSettingsButton != null && settingsPanel != null)
         {
             openSettingsButton.onClick.RemoveAllListeners();
             openSettingsButton.onClick.AddListener(() =>
             {
-                settingsPanel.SetActive(true);
+                animations.ButtonClickAnimation(openSettingsButton);
+                animations.OpenSettingsPanelAnimation(settingsPanel);
             });
         }
 
@@ -40,7 +45,7 @@ public class SettingsManager : MonoBehaviour
             closeSettingsButton.onClick.RemoveAllListeners();
             closeSettingsButton.onClick.AddListener(() =>
             {
-                settingsPanel.SetActive(false);
+                animations.CloseSettingsPanelAnimation(settingsPanel);
             });
         }
 

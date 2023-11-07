@@ -5,6 +5,9 @@ public class LetterManager : MonoBehaviour
 {
     [SerializeField] private Button closeLetterButton;
     [SerializeField] private GameObject letterPanel;
+    [SerializeField] private Text letterText;
+
+    [SerializeField] private string[] letters;
 
     private int currentLetterIndex;
 
@@ -16,6 +19,9 @@ public class LetterManager : MonoBehaviour
         alphabetManager = alphabet;
         animations = uIAnimations;
 
+        letterPanel.SetActive(false);
+
+        letters = alphabetManager.SetLetterList();
         ButtonClickAction();
 
         Debug.Log("LetterManager initialize");
@@ -25,7 +31,7 @@ public class LetterManager : MonoBehaviour
     {
         currentLetterIndex = alphabetManager.currentLetterIndex;
 
-        Debug.Log(currentLetterIndex);
+        letterText.text = letters[currentLetterIndex];
     }
 
     private void ButtonClickAction()

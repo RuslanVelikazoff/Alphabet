@@ -19,6 +19,18 @@ public class AlphabetManager : MonoBehaviour
         Debug.Log("AlphabetManager initialized");
     }
 
+    public string[] SetLetterList()
+    {
+        string[] allLetters = new string[letterButton.Length];
+
+        for (int i = 0; i < allLetters.Length; i++)
+        {
+            allLetters[i] = letterButton[i].name;
+        }
+
+        return allLetters;
+    }
+
     private void ButtonClickAction()
     {
         //А

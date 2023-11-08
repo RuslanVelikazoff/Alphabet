@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using System.Collections;
 
 public class UIAnimations
 {
@@ -43,11 +44,20 @@ public class UIAnimations
     //TODO: add normal animation
     public void OpenLetterPanelAnimation(GameObject panel)
     {
+        Sequence sequence = DOTween.Sequence();
+
         panel.SetActive(true);
+
+        sequence.Append(panel.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), .5f))
+            .Append(panel.transform.DOScale(new Vector3(1f, 1f, 1f), .5f));
     }
 
-    public void CloseLetterPanelAnimation(GameObject panel)
+    public IEnumerator CloseLetterPanelAnimationCO(GameObject panel)
     {
+        panel.transform.DOScale(new Vector3(0f, 0f, 0f), .5f);
+
+        yield return new WaitForSeconds(.5f);
+
         panel.SetActive(false);
     }
 

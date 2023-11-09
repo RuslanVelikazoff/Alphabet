@@ -44,4 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5955aa81fccaa43baaa60f5b209c4eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Close
+    clip: {fileID: 8300000, guid: d05718d14f48845c89605ac5944c36d3, type: 3}
+    volume: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Open
+    clip: {fileID: 8300000, guid: 6364f0aa4b92944b8b9d9075bf75634d, type: 3}
+    volume: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: 9e2cd7246cdd94631b1017c88e7e66c6, type: 3}
+    volume: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: OffOnAudio
+    clip: {fileID: 8300000, guid: e24368713f81448ec91797603ec75725, type: 3}
+    volume: 0
+    loop: 0
+    source: {fileID: 0}

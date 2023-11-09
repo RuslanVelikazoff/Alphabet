@@ -54,6 +54,8 @@ public class SettingsManager : MonoBehaviour
             musicButton.onClick.RemoveAllListeners();
             musicButton.onClick.AddListener(() =>
             {
+                AudioManager.instance.Play("OffOnAudio");
+
                 if (PlayerPrefs.GetFloat("MusicVolume") == 1)
                 {
                     AudioManager.instance.OffMusic();
@@ -72,6 +74,8 @@ public class SettingsManager : MonoBehaviour
             soundButton.onClick.RemoveAllListeners();
             soundButton.onClick.AddListener(() =>
             {
+                AudioManager.instance.Play("OffOnAudio");
+
                 if (PlayerPrefs.GetFloat("SoundVolume") == 1)
                 {
                     AudioManager.instance.OffSound();

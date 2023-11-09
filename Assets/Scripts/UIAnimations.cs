@@ -16,6 +16,8 @@ public class UIAnimations
     {
         Sequence sequence = DOTween.Sequence();
 
+        AudioManager.instance.Play("Open");
+
         sequence.Append(panel.transform.DOMove(mainPanelPosition, .6f))
             .Join(panel.transform.DOScale(new Vector3(.8f, .8f, 1f), .3f))
             .Append(panel.transform.DOScale(new Vector3(1f, 1f, 1f), .3f));
@@ -24,6 +26,8 @@ public class UIAnimations
     public void CloseSettingsPanelAnimation(GameObject panel)
     {
         Sequence sequence = DOTween.Sequence();
+
+        AudioManager.instance.Play("Close");
 
         sequence.Append(panel.transform.DOScale(new Vector3(.8f, .8f, 1f), .3f))
             .Append(panel.transform.DOMove(settingsPanelPosition, .6f))
@@ -41,10 +45,11 @@ public class UIAnimations
     #endregion
 
     #region LetterPanel
-    //TODO: add normal animation
     public void OpenLetterPanelAnimation(GameObject panel)
     {
         Sequence sequence = DOTween.Sequence();
+
+        AudioManager.instance.Play("Open");
 
         panel.SetActive(true);
 
@@ -54,6 +59,8 @@ public class UIAnimations
 
     public IEnumerator CloseLetterPanelAnimationCO(GameObject panel)
     {
+        AudioManager.instance.Play("Close");
+
         panel.transform.DOScale(new Vector3(0f, 0f, 0f), .5f);
 
         yield return new WaitForSeconds(.5f);

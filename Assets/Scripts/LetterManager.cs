@@ -1,14 +1,22 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LetterManager : MonoBehaviour
 {
-    [SerializeField] private Button closeLetterButton;
-    [SerializeField] private GameObject letterPanel;
-    [SerializeField] private Text letterText;
+    [SerializeField]
+    private Button closeLetterButton;
+    [SerializeField]
+    private GameObject letterPanel;
+    [SerializeField]
+    private Text letterText;
 
-    [SerializeField] private string[] letters;
-    [SerializeField] private GameObject[] lettersImages;
+    [SerializeField]
+    private string[] letters;
+    [SerializeField]
+    private GameObject[] lettersImages;
+    [SerializeField]
+    private Button[] letterButtons;
 
     private int currentLetterIndex;
 
@@ -33,6 +41,7 @@ public class LetterManager : MonoBehaviour
         currentLetterIndex = alphabetManager.currentLetterIndex;
 
         letterText.text = letters[currentLetterIndex];
+        LetterButtonClickAction(currentLetterIndex);
 
         for (int i = 0; i < lettersImages.Length; i++)
         {
@@ -45,6 +54,8 @@ public class LetterManager : MonoBehaviour
                 lettersImages[i].SetActive(false);
             }
         }
+
+        StartCoroutine(LetterAudio(letters[currentLetterIndex]));
     }
 
     private void ButtonClickAction()
@@ -57,5 +68,24 @@ public class LetterManager : MonoBehaviour
                 StartCoroutine(animations.CloseLetterPanelAnimationCO(letterPanel));
             });
         }
+    }
+
+    private void LetterButtonClickAction(int index)
+    {
+        if (letterButtons[index] != null)
+        {
+            letterButtons[index].onClick.RemoveAllListeners();
+            letterButtons[index].onClick.AddListener(() =>
+            {
+                AudioManager.instance.Play(letters[index]);
+            });
+        }
+    }
+
+    private IEnumerator LetterAudio(string letter)
+    {
+        yield return new WaitForSeconds(.6f);
+
+        AudioManager.instance.Play(letter);
     }
 }

@@ -45,7 +45,7 @@ public class UIAnimations
     #endregion
 
     #region LetterPanel
-    public void OpenLetterPanelAnimation(GameObject panel)
+    public void OpenLetterPanelAnimation(GameObject panel, GameObject image)
     {
         Sequence sequence = DOTween.Sequence();
 
@@ -53,17 +53,17 @@ public class UIAnimations
 
         panel.SetActive(true);
 
-        sequence.Append(panel.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), .5f))
-            .Append(panel.transform.DOScale(new Vector3(1f, 1f, 1f), .5f));
+        sequence.Append(image.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), .5f))
+            .Append(image.transform.DOScale(new Vector3(1f, 1f, 1f), .5f));
     }
 
-    public IEnumerator CloseLetterPanelAnimationCO(GameObject panel)
+    public IEnumerator CloseLetterPanelAnimationCO(GameObject panel, GameObject image)
     {
         AudioManager.instance.Play("Close");
 
-        panel.transform.DOScale(new Vector3(0f, 0f, 0f), .5f);
+        image.transform.DOScale(new Vector3(0f, 0f, 0f), .5f);
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.6f);
 
         panel.SetActive(false);
     }

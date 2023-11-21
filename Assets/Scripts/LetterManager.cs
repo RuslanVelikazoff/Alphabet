@@ -18,6 +18,7 @@ public class LetterManager : MonoBehaviour
     [SerializeField]
     private Button[] letterButtons;
 
+    private GameObject letterImages;
     private int currentLetterIndex;
 
     private AlphabetManager alphabetManager;
@@ -30,6 +31,7 @@ public class LetterManager : MonoBehaviour
 
         letterPanel.SetActive(false);
 
+        letterImages = alphabet.letterImages;
         letters = alphabetManager.SetLetterList();
         ButtonClickAction();
 
@@ -65,7 +67,7 @@ public class LetterManager : MonoBehaviour
             closeLetterButton.onClick.RemoveAllListeners();
             closeLetterButton.onClick.AddListener(() =>
             {
-                StartCoroutine(animations.CloseLetterPanelAnimationCO(letterPanel));
+                StartCoroutine(animations.CloseLetterPanelAnimationCO(letterPanel, letterImages));
             });
         }
     }

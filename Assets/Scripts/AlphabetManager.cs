@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class AlphabetManager : MonoBehaviour
 {
     [SerializeField] private Button[] letterButton;
+    [SerializeField] public GameObject letterImages;
     [SerializeField] private GameObject letterPanel;
 
     [HideInInspector]public int currentLetterIndex = 0;
@@ -40,7 +41,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[0].onClick.AddListener(() =>
             {
                 currentLetterIndex = 0;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -51,7 +52,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[1].onClick.AddListener(() =>
             {
                 currentLetterIndex = 1;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -62,7 +63,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[2].onClick.AddListener(() =>
             {
                 currentLetterIndex = 2;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -73,7 +74,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[3].onClick.AddListener(() =>
             {
                 currentLetterIndex = 3;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -84,7 +85,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[4].onClick.AddListener(() =>
             {
                 currentLetterIndex = 4;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -95,7 +96,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[5].onClick.AddListener(() =>
             {
                 currentLetterIndex = 5;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -106,7 +107,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[6].onClick.AddListener(() =>
             {
                 currentLetterIndex = 6;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -117,7 +118,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[7].onClick.AddListener(() =>
             {
                 currentLetterIndex = 7;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -128,7 +129,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[8].onClick.AddListener(() =>
             {
                 currentLetterIndex = 8;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -139,7 +140,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[9].onClick.AddListener(() =>
             {
                 currentLetterIndex = 9;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -150,7 +151,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[10].onClick.AddListener(() =>
             {
                 currentLetterIndex = 10;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -161,7 +162,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[11].onClick.AddListener(() =>
             {
                 currentLetterIndex = 11;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -172,7 +173,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[12].onClick.AddListener(() =>
             {
                 currentLetterIndex = 12;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -183,7 +184,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[13].onClick.AddListener(() =>
             {
                 currentLetterIndex = 13;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -194,7 +195,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[14].onClick.AddListener(() =>
             {
                 currentLetterIndex = 14;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -205,7 +206,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[15].onClick.AddListener(() =>
             {
                 currentLetterIndex = 15;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -216,7 +217,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[16].onClick.AddListener(() =>
             {
                 currentLetterIndex = 16;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -227,7 +228,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[17].onClick.AddListener(() =>
             {
                 currentLetterIndex = 17;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -238,7 +239,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[18].onClick.AddListener(() =>
             {
                 currentLetterIndex = 18;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -249,7 +250,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[19].onClick.AddListener(() =>
             {
                 currentLetterIndex = 19;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -260,7 +261,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[20].onClick.AddListener(() =>
             {
                 currentLetterIndex = 20;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -271,7 +272,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[21].onClick.AddListener(() =>
             {
                 currentLetterIndex = 21;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -282,7 +283,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[22].onClick.AddListener(() =>
             {
                 currentLetterIndex = 22;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -293,7 +294,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[23].onClick.AddListener(() =>
             {
                 currentLetterIndex = 23;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -304,7 +305,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[24].onClick.AddListener(() =>
             {
                 currentLetterIndex = 24;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -315,7 +316,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[25].onClick.AddListener(() =>
             {
                 currentLetterIndex = 25;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -326,7 +327,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[26].onClick.AddListener(() =>
             {
                 currentLetterIndex = 26;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -337,7 +338,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[27].onClick.AddListener(() =>
             {
                 currentLetterIndex = 27;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -348,7 +349,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[28].onClick.AddListener(() =>
             {
                 currentLetterIndex = 28;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -359,7 +360,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[29].onClick.AddListener(() =>
             {
                 currentLetterIndex = 29;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -370,7 +371,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[30].onClick.AddListener(() =>
             {
                 currentLetterIndex = 30;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -381,7 +382,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[31].onClick.AddListener(() =>
             {
                 currentLetterIndex = 31;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
 
@@ -392,7 +393,7 @@ public class AlphabetManager : MonoBehaviour
             letterButton[32].onClick.AddListener(() =>
             {
                 currentLetterIndex = 32;
-                animations.OpenLetterPanelAnimation(letterPanel);
+                animations.OpenLetterPanelAnimation(letterPanel, letterImages);
             });
         }
     }

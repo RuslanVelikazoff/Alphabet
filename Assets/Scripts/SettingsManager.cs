@@ -11,9 +11,11 @@ public class SettingsManager : MonoBehaviour
     [Space(7)]
 
     [SerializeField] private Button musicButton;
+    [SerializeField] private Sprite musicOnSprite;
+    [SerializeField] private Sprite musicOffSprite;
     [SerializeField] private Button soundButton;
-    [SerializeField] private Sprite onSprite;
-    [SerializeField] private Sprite offSprite;
+    [SerializeField] private Sprite soundOnSprite;
+    [SerializeField] private Sprite soundOffSprite;
 
     private UIAnimations animations;
 
@@ -94,22 +96,22 @@ public class SettingsManager : MonoBehaviour
     {
         if (PlayerPrefs.GetFloat("MusicVolume") == 0)
         {
-            musicButton.GetComponent<Image>().sprite = offSprite;
+            musicButton.GetComponent<Image>().sprite = musicOffSprite;
         }
 
         else if (PlayerPrefs.GetFloat("MusicVolume") == 1)
         {
-            musicButton.GetComponent<Image>().sprite = onSprite;
+            musicButton.GetComponent<Image>().sprite = musicOnSprite;
         }
 
         if (PlayerPrefs.GetFloat("SoundVolume") == 0)
         {
-            soundButton.GetComponent<Image>().sprite = offSprite;
+            soundButton.GetComponent<Image>().sprite = soundOffSprite;
         }
 
         else if (PlayerPrefs.GetFloat("SoundVolume") == 1)
         {
-            soundButton.GetComponent<Image>().sprite = onSprite;
+            soundButton.GetComponent<Image>().sprite = soundOnSprite;
         }
     }
 }

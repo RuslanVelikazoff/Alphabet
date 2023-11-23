@@ -1064,8 +1064,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -306, y: -90}
-  m_SizeDelta: {x: 200, y: 70}
+  m_AnchoredPosition: {x: -306, y: -144.00006}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130596680
 MonoBehaviour:
@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a2519a5dacf94dbf95bad2b03cd99ed, type: 3}
+  m_Sprite: {fileID: 17672580, guid: 051fff88fe2b5440e9c85df06b885696, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3050,8 +3050,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 306, y: -90}
-  m_SizeDelta: {x: 200, y: 70}
+  m_AnchoredPosition: {x: 306, y: -144.00006}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &449389654
 MonoBehaviour:
@@ -3117,7 +3117,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a2519a5dacf94dbf95bad2b03cd99ed, type: 3}
+  m_Sprite: {fileID: -900713255, guid: 051fff88fe2b5440e9c85df06b885696, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4533,7 +4533,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b8b1bafe91d63484aa22111ecfc4f40c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20a794ef1723d4935b716aef0783939b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11813,9 +11813,11 @@ MonoBehaviour:
   settingsPanel: {fileID: 1760239388}
   mainPanel: {fileID: 856722566}
   musicButton: {fileID: 449389654}
+  musicOnSprite: {fileID: 1262016017, guid: 051fff88fe2b5440e9c85df06b885696, type: 3}
+  musicOffSprite: {fileID: -900713255, guid: 051fff88fe2b5440e9c85df06b885696, type: 3}
   soundButton: {fileID: 130596680}
-  onSprite: {fileID: 21300000, guid: a410a42fb998046e9a759d49e44c0b32, type: 3}
-  offSprite: {fileID: 21300000, guid: 3a2519a5dacf94dbf95bad2b03cd99ed, type: 3}
+  soundOnSprite: {fileID: 1640663807, guid: 051fff88fe2b5440e9c85df06b885696, type: 3}
+  soundOffSprite: {fileID: 17672580, guid: 051fff88fe2b5440e9c85df06b885696, type: 3}
 --- !u!1 &1768108014
 GameObject:
   m_ObjectHideFlags: 0

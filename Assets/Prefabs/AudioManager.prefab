@@ -225,3 +225,8 @@ MonoBehaviour:
     volume: 0
     loop: 0
     source: {fileID: 0}
+  - name: "\u042A"
+    clip: {fileID: 8300000, guid: e80a135ad275c48deb8aef0c71245992, type: 3}
+    volume: 0
+    loop: 0
+    source: {fileID: 0}

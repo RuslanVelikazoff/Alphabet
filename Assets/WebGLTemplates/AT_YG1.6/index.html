@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <link rel="stylesheet" href="./style.css">
+
 
     #if CONNECT_WEB_AUDIO_PLUGIN_FILES && CONNECT_WEB_AUDIO_PLUGIN_FILES !== "-" && CONNECT_WEB_AUDIO_PLUGIN_FILES !== " "
     <!-- Подключены необходимые файлы для работы аудио плагина: https://t.me/ChatKozlovDev -->
-    <script type="text/javascript" src="./howler.min.js"></script>
-    <script type="text/javascript" src="./WebAudio.js"></script>
+    <script type="text/javascript" src="./Web Audio Plugin/howler.min.js"></script>
+    <script type="text/javascript" src="./Web Audio Plugin/WebAudio.js"></script>
     #endif
     #if ENABLE_CONSOLE && ENABLE_CONSOLE !== "-" && ENABLE_CONSOLE !== " "
     <!-- Консоль добавлена -->
@@ -189,7 +190,7 @@
         margin: auto;
     	bottom: 0;
         left: 0;
-        right: 0; 
+        right: 0;
         z-index: 10000;
         border-radius: 15px 15px 0 0;
         display: none;
@@ -199,7 +200,7 @@
         max-width: 100%;
         overflow: auto;
         padding: 15px;
-        margin: 20px; 
+        margin: 20px;
         position: relative;
         color: white;
         font-family: sans-serif;

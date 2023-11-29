@@ -1,0 +1,243 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4645132edefd4c74968a0c941a98fb89, type: 3}
+  m_Name: Audio Database
+  m_EditorClassIdentifier: 
+  _items:
+  - Clip: {fileID: 8300000, guid: c07dc5042cac5470dade6d8eb6c0e71a, type: 3}
+    Key: 15
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 15.mp3
+    Preload: 1
+    _id: 563da120-24b4-44e5-bba5-0378a4860755
+  - Clip: {fileID: 8300000, guid: 81b3c8639f9e24a77bf82fe16d48d1d1, type: 3}
+    Key: 1
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 1.mp3
+    Preload: 1
+    _id: 17cdd183-03df-48cf-b117-3519d1430afe
+  - Clip: {fileID: 8300000, guid: a2394f0da9d3443a897edd79ebc0d468, type: 3}
+    Key: 21
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 21.mp3
+    Preload: 1
+    _id: d266ee4b-9701-4da3-9499-860720af563a
+  - Clip: {fileID: 8300000, guid: 03a85c43993e342e19359910e3318198, type: 3}
+    Key: 29
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 29.mp3
+    Preload: 1
+    _id: 98cb12e4-686e-4625-a110-585a2bc5b8eb
+  - Clip: {fileID: 8300000, guid: 73ab1a515b2ce455bb6f93f384e43c03, type: 3}
+    Key: 18
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 18.mp3
+    Preload: 1
+    _id: bda9b8cd-28fb-4341-bcb2-29caf498eede
+  - Clip: {fileID: 8300000, guid: c3224c78c027a4407a33cde9778bdd76, type: 3}
+    Key: 4
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 4.mp3
+    Preload: 1
+    _id: fff9eb9f-8533-4cbf-9652-88f46551afea
+  - Clip: {fileID: 8300000, guid: 04425900cbfca48659d717b9562970e5, type: 3}
+    Key: 31
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 31.mp3
+    Preload: 1
+    _id: 75ee4fe5-2641-423e-84b7-1a227f3f2545
+  - Clip: {fileID: 8300000, guid: 6444c66fe92044e0a80fbfeaf14e3dba, type: 3}
+    Key: 12
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 12.mp3
+    Preload: 1
+    _id: 40f8a84e-3d06-442a-a4e0-f9120d49d74f
+  - Clip: {fileID: 8300000, guid: a4822ed1cd90c4b51958b44699d4876e, type: 3}
+    Key: 19
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 19.mp3
+    Preload: 1
+    _id: 0326a6aa-ba4c-46a5-b9f9-cf0569d9a7cd
+  - Clip: {fileID: 8300000, guid: f567c993efa254918a0715671e7bd87c, type: 3}
+    Key: 22
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 22.mp3
+    Preload: 1
+    _id: 5d6de349-043f-4cb6-9c71-7430b169b957
+  - Clip: {fileID: 8300000, guid: 66ffddd6b89014814b3d8dd5c8863863, type: 3}
+    Key: 23
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 23.mp3
+    Preload: 1
+    _id: 1dfce29f-a18a-43ca-8bc4-d919ce15192f
+  - Clip: {fileID: 8300000, guid: 3779d655cd3d54e9a87a3acabc4346bc, type: 3}
+    Key: ClosePanel
+    FolderPath: Sounds/
+    Name: ClosePanel.mp3
+    Preload: 1
+    _id: 4e35a6e5-cc45-4a2b-a7e2-3944cecf08b6
+  - Clip: {fileID: 8300000, guid: 48e6821c4b7514eb9b03b3c7b0856d85, type: 3}
+    Key: 3
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 3.mp3
+    Preload: 1
+    _id: aea28581-66b0-4fb2-bf21-97983f6cd807
+  - Clip: {fileID: 8300000, guid: 98a8a0fa7ec9a4c3790d660847411067, type: 3}
+    Key: 11
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 11.mp3
+    Preload: 1
+    _id: ddaff284-112f-4e34-bfba-d664bc65c9f5
+  - Clip: {fileID: 8300000, guid: a8414e2a3b5d345059116879ce323765, type: 3}
+    Key: OffOnAudio
+    FolderPath: Sounds/
+    Name: OffOnAudio.mp3
+    Preload: 1
+    _id: fe67c33a-fad2-4708-962c-04e01fd4f23f
+  - Clip: {fileID: 8300000, guid: d8d815462747b43b99f3d105c8c012e6, type: 3}
+    Key: 2
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 2.mp3
+    Preload: 1
+    _id: c9eca7b7-b26d-42c2-a3be-99fea5bf8495
+  - Clip: {fileID: 8300000, guid: e80a135ad275c48deb8aef0c71245992, type: 3}
+    Key: 27
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 27.mp3
+    Preload: 1
+    _id: 27b6a448-7bd6-4e37-bdb3-471f3b93edc9
+  - Clip: {fileID: 8300000, guid: 19c877dcb4e584ae684bfa90a494b973, type: 3}
+    Key: 13
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 13.mp3
+    Preload: 1
+    _id: dc632a93-53c9-426a-b50a-ab36a94f3e69
+  - Clip: {fileID: 8300000, guid: 49917495c72f44e529489f5496a9e559, type: 3}
+    Key: 30
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 30.mp3
+    Preload: 1
+    _id: af16a728-4cbf-426b-b730-26d2bfe1b1cd
+  - Clip: {fileID: 8300000, guid: 492f06344b00a4002addb98c9a9005d9, type: 3}
+    Key: 26
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 26.mp3
+    Preload: 1
+    _id: 4af04dff-dad2-4046-88fd-af77e97e7936
+  - Clip: {fileID: 8300000, guid: 498fe90b6e1b84e2287dcca8844f8992, type: 3}
+    Key: 17
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 17.mp3
+    Preload: 1
+    _id: 49f5353f-1847-41ca-ab2e-d2905c79d05d
+  - Clip: {fileID: 8300000, guid: 1abcb3b47f34143cd907c954de96f8cf, type: 3}
+    Key: 14
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 14.mp3
+    Preload: 1
+    _id: cd4cda87-0d81-47a2-96de-b327fad94c73
+  - Clip: {fileID: 8300000, guid: 4a87f3a7925f34e65b6f6e155e76c33b, type: 3}
+    Key: 9
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 9.mp3
+    Preload: 1
+    _id: e0b33344-7bc0-45bf-961d-ea8486c5c007
+  - Clip: {fileID: 8300000, guid: aac2352d253194509aa28970774feaf2, type: 3}
+    Key: 16
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 16.mp3
+    Preload: 1
+    _id: 59d25987-958e-44cf-a27d-4cdc4d8bb5d3
+  - Clip: {fileID: 8300000, guid: 8b8d9cc5125dd4a3fa689ffe7ea05512, type: 3}
+    Key: 28
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 28.mp3
+    Preload: 1
+    _id: 865e47b0-91a8-4e6e-91e2-4384f2272270
+  - Clip: {fileID: 8300000, guid: eb2cebfff76b44a9ebb8d63ed6543288, type: 3}
+    Key: 6
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 6.mp3
+    Preload: 1
+    _id: f48f9c87-207a-4ea9-98e3-e4932f72d9a9
+  - Clip: {fileID: 8300000, guid: 3cf97eb797ac74adbaf419db7fc98708, type: 3}
+    Key: 5
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 5.mp3
+    Preload: 1
+    _id: cd9ab2a5-0cd0-4fa8-adb1-b620670b1f5d
+  - Clip: {fileID: 8300000, guid: 3c5a70f531b804f2c9a5374cf68d363a, type: 3}
+    Key: 0
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 0.mp3
+    Preload: 1
+    _id: b0b6e946-1ffb-472f-8045-4039bd4e7507
+  - Clip: {fileID: 8300000, guid: 4c5d94873807d471d8933577b8f33a9f, type: 3}
+    Key: 10
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 10.mp3
+    Preload: 1
+    _id: 0357f18f-5818-4f12-9c04-a4c5cfb86a91
+  - Clip: {fileID: 8300000, guid: adaec26e55e2748da92547f44197672f, type: 3}
+    Key: 20
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 20.mp3
+    Preload: 1
+    _id: 6b3dceea-c5b2-4b6c-81c7-0b50445c6717
+  - Clip: {fileID: 8300000, guid: ddfdbb363161844ba8f4a3d3a05c4987, type: 3}
+    Key: 8
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 8.mp3
+    Preload: 1
+    _id: b535eea8-08a3-4f8f-8df1-6d57f1f8ea88
+  - Clip: {fileID: 8300000, guid: 2e69447d093444f869a2e86383cb4f5d, type: 3}
+    Key: 24
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 24.mp3
+    Preload: 1
+    _id: 1775d277-6383-4136-8cf7-dd6743d28eac
+  - Clip: {fileID: 8300000, guid: 9e1494eb61a974e4daeac30ed8da0601, type: 3}
+    Key: 32
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 32.mp3
+    Preload: 1
+    _id: d6d9f9c1-1833-44d6-bfce-bbecdaa55d55
+  - Clip: {fileID: 8300000, guid: 9e2cd7246cdd94631b1017c88e7e66c6, type: 3}
+    Key: Theme
+    FolderPath: Sounds/
+    Name: Theme.mp3
+    Preload: 1
+    _id: 5ca15eb7-ea5e-4737-8895-13ca2076d1c9
+  - Clip: {fileID: 8300000, guid: ae73942f09d1c4f2786c4f2ac43e58d2, type: 3}
+    Key: 25
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 25.mp3
+    Preload: 1
+    _id: 63aafd7b-51c2-4e92-8116-ca3247cb1aaa
+  - Clip: {fileID: 8300000, guid: 3fa7122d80d39f544af3826107d4d445, type: 3}
+    Key: Example music
+    FolderPath: Plugins/Audio/Examples/Sounds/
+    Name: Example music.mp3
+    Preload: 1
+    _id: ca3aa144-485d-4e29-81d4-e0114c76af04
+  - Clip: {fileID: 8300000, guid: 8fba62fa6e4de45b785ac8614d7c0a43, type: 3}
+    Key: 7
+    FolderPath: Sounds/NewLetterSounds/
+    Name: 7.mp3
+    Preload: 1
+    _id: bcb8b04a-e260-4107-85b8-db1bab27ea66
+  - Clip: {fileID: 8300000, guid: cff5c5d1b0f6548a9bc49ffd0dbfb36e, type: 3}
+    Key: OpenPanel
+    FolderPath: Sounds/
+    Name: OpenPanel.mp3
+    Preload: 1
+    _id: baaa500c-e46f-438c-8916-6ff43c6f148c

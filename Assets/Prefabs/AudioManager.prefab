@@ -44,14 +44,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5955aa81fccaa43baaa60f5b209c4eb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sourceSounds: {fileID: 0}
+  sourceMusic: {fileID: 0}
   sounds:
-  - name: Close
-    clip: {fileID: 8300000, guid: d05718d14f48845c89605ac5944c36d3, type: 3}
+  - name: ClosePanel
+    clip: {fileID: 8300000, guid: 3779d655cd3d54e9a87a3acabc4346bc, type: 3}
     volume: 0
     loop: 0
     source: {fileID: 0}
-  - name: Open
-    clip: {fileID: 8300000, guid: 6364f0aa4b92944b8b9d9075bf75634d, type: 3}
+  - name: OpenPanel
+    clip: {fileID: 8300000, guid: cff5c5d1b0f6548a9bc49ffd0dbfb36e, type: 3}
     volume: 0
     loop: 0
     source: {fileID: 0}
@@ -61,172 +63,7 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: OffOnAudio
-    clip: {fileID: 8300000, guid: e24368713f81448ec91797603ec75725, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0410"
-    clip: {fileID: 8300000, guid: 3c5a70f531b804f2c9a5374cf68d363a, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0411"
-    clip: {fileID: 8300000, guid: 81b3c8639f9e24a77bf82fe16d48d1d1, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0412"
-    clip: {fileID: 8300000, guid: d8d815462747b43b99f3d105c8c012e6, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0413"
-    clip: {fileID: 8300000, guid: 48e6821c4b7514eb9b03b3c7b0856d85, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0414"
-    clip: {fileID: 8300000, guid: c3224c78c027a4407a33cde9778bdd76, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0415"
-    clip: {fileID: 8300000, guid: 3cf97eb797ac74adbaf419db7fc98708, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0401"
-    clip: {fileID: 8300000, guid: eb2cebfff76b44a9ebb8d63ed6543288, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0416"
-    clip: {fileID: 8300000, guid: 8fba62fa6e4de45b785ac8614d7c0a43, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0417"
-    clip: {fileID: 8300000, guid: ddfdbb363161844ba8f4a3d3a05c4987, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0419"
-    clip: {fileID: 8300000, guid: 4c5d94873807d471d8933577b8f33a9f, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0418"
-    clip: {fileID: 8300000, guid: 4a87f3a7925f34e65b6f6e155e76c33b, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u041A"
-    clip: {fileID: 8300000, guid: 98a8a0fa7ec9a4c3790d660847411067, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u041B"
-    clip: {fileID: 8300000, guid: 6444c66fe92044e0a80fbfeaf14e3dba, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u041C"
-    clip: {fileID: 8300000, guid: 19c877dcb4e584ae684bfa90a494b973, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u042C"
-    clip: {fileID: 8300000, guid: 03a85c43993e342e19359910e3318198, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u041D"
-    clip: {fileID: 8300000, guid: 1abcb3b47f34143cd907c954de96f8cf, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u041E"
-    clip: {fileID: 8300000, guid: c07dc5042cac5470dade6d8eb6c0e71a, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u041F"
-    clip: {fileID: 8300000, guid: aac2352d253194509aa28970774feaf2, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0420"
-    clip: {fileID: 8300000, guid: 498fe90b6e1b84e2287dcca8844f8992, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0421"
-    clip: {fileID: 8300000, guid: 73ab1a515b2ce455bb6f93f384e43c03, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u042B"
-    clip: {fileID: 8300000, guid: 8b8d9cc5125dd4a3fa689ffe7ea05512, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0422"
-    clip: {fileID: 8300000, guid: a4822ed1cd90c4b51958b44699d4876e, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0423"
-    clip: {fileID: 8300000, guid: adaec26e55e2748da92547f44197672f, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0424"
-    clip: {fileID: 8300000, guid: a2394f0da9d3443a897edd79ebc0d468, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0425"
-    clip: {fileID: 8300000, guid: f567c993efa254918a0715671e7bd87c, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0426"
-    clip: {fileID: 8300000, guid: 66ffddd6b89014814b3d8dd5c8863863, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0427"
-    clip: {fileID: 8300000, guid: 2e69447d093444f869a2e86383cb4f5d, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0428"
-    clip: {fileID: 8300000, guid: ae73942f09d1c4f2786c4f2ac43e58d2, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u0429"
-    clip: {fileID: 8300000, guid: 492f06344b00a4002addb98c9a9005d9, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u042D"
-    clip: {fileID: 8300000, guid: 49917495c72f44e529489f5496a9e559, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u042E"
-    clip: {fileID: 8300000, guid: 04425900cbfca48659d717b9562970e5, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u042F"
-    clip: {fileID: 8300000, guid: 9e1494eb61a974e4daeac30ed8da0601, type: 3}
-    volume: 0
-    loop: 0
-    source: {fileID: 0}
-  - name: "\u042A"
-    clip: {fileID: 8300000, guid: e80a135ad275c48deb8aef0c71245992, type: 3}
+    clip: {fileID: 8300000, guid: a8414e2a3b5d345059116879ce323765, type: 3}
     volume: 0
     loop: 0
     source: {fileID: 0}

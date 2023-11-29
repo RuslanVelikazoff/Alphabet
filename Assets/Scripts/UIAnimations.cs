@@ -16,7 +16,7 @@ public class UIAnimations
     {
         Sequence sequence = DOTween.Sequence();
 
-        AudioManager.instance.Play("Open");
+        AudioManager.instance.Play("OpenPanel");
 
         sequence.Append(panel.transform.DOMove(mainPanelPosition, .6f))
             .Join(panel.transform.DOScale(new Vector3(.8f, .8f, 1f), .3f))
@@ -27,7 +27,7 @@ public class UIAnimations
     {
         Sequence sequence = DOTween.Sequence();
 
-        AudioManager.instance.Play("Close");
+        AudioManager.instance.Play("ClosePanel");
 
         sequence.Append(panel.transform.DOScale(new Vector3(.8f, .8f, 1f), .3f))
             .Append(panel.transform.DOMove(settingsPanelPosition, .6f))
@@ -49,7 +49,7 @@ public class UIAnimations
     {
         Sequence sequence = DOTween.Sequence();
 
-        AudioManager.instance.Play("Open");
+        AudioManager.instance.Play("OpenPanel");
 
         panel.SetActive(true);
 
@@ -59,7 +59,7 @@ public class UIAnimations
 
     public IEnumerator CloseLetterPanelAnimationCO(GameObject panel, GameObject image)
     {
-        AudioManager.instance.Play("Close");
+        AudioManager.instance.Play("ClosePanel");
 
         image.transform.DOScale(new Vector3(0f, 0f, 0f), .5f);
 

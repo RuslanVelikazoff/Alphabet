@@ -1,8 +1,13 @@
 using UnityEngine;
-using System;
+using Plugins.Audio.Core;
 
 public class AudioManager : MonoBehaviour
 {
+    [SerializeField]
+    private SourceAudio sourceSounds;
+    [SerializeField]
+    private SourceAudio sourceMusic;
+
     public Sound[] sounds;
 
     public static AudioManager instance;
@@ -28,36 +33,45 @@ public class AudioManager : MonoBehaviour
 
         foreach (Sound s in sounds)
         {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-
-            s.source.volume = s.volume = PlayerPrefs.GetFloat("SoundVolume");
-
-            s.source.loop = s.loop;
-
             if (s.name == "Theme")
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat("MusicVolume");
+                s.source = sourceMusic;
+
+                sourceMusic.Loop = s.loop;
+
+                sourceMusic.Volume = s.volume = PlayerPrefs.GetFloat("MusicVolume");
+            }
+            else
+            {
+                continue;
             }
         }
     }
 
     private void Start()
     {
-        Play("Theme");
+        sourceMusic.Play("Theme");
+
+        foreach (Sound s in sounds)
+        {
+            if (s.name == "Theme")
+            {
+                continue;
+            }
+            else
+            {
+                s.source = sourceSounds;
+
+                sourceSounds.Loop = s.loop;
+
+                sourceSounds.Volume = s.volume = PlayerPrefs.GetFloat("SoundVolume");
+            }
+        }
     }
 
     public void Play(string name)
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-
-        if (s == null)
-        {
-            Debug.LogWarning("Sound: " + name + " not found!");
-            return;
-        }
-
-        s.source.Play();
+        sourceSounds.Play(name);
     }
 
     private void SetVolume()
@@ -81,7 +95,7 @@ public class AudioManager : MonoBehaviour
         {
             if (s.name == "Theme")
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat("MusicVolume");
+                s.source.Volume = s.volume = PlayerPrefs.GetFloat("MusicVolume");
             }
         }
     }
@@ -94,7 +108,7 @@ public class AudioManager : MonoBehaviour
         {
             if (s.name == "Theme")
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat("MusicVolume");
+                s.source.Volume = s.volume = PlayerPrefs.GetFloat("MusicVolume");
             }
         }
     }
@@ -111,7 +125,7 @@ public class AudioManager : MonoBehaviour
             }
             else
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat("SoundVolume");
+                s.source.Volume = s.volume = PlayerPrefs.GetFloat("SoundVolume");
             }
         }
     }
@@ -128,7 +142,7 @@ public class AudioManager : MonoBehaviour
             }
             else
             {
-                s.source.volume = s.volume = PlayerPrefs.GetFloat("SoundVolume");
+                s.source.Volume = s.volume = PlayerPrefs.GetFloat("SoundVolume");
             }
         }
     }

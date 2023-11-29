@@ -57,7 +57,7 @@ public class LetterManager : MonoBehaviour
             }
         }
 
-        StartCoroutine(LetterAudio(letters[currentLetterIndex]));
+        StartCoroutine(LetterAudio(currentLetterIndex.ToString()));
     }
 
     private void ButtonClickAction()
@@ -79,7 +79,7 @@ public class LetterManager : MonoBehaviour
             letterButtons[index].onClick.RemoveAllListeners();
             letterButtons[index].onClick.AddListener(() =>
             {
-                AudioManager.instance.Play(letters[index]);
+                AudioManager.instance.Play(index.ToString());
             });
         }
     }

@@ -36,27 +36,23 @@ public class AudioManager : MonoBehaviour
             if (s.name == "Theme")
             {
                 s.source = sourceMusic;
-
-                sourceMusic.Loop = s.loop;
-
-                sourceMusic.Volume = s.volume = PlayerPrefs.GetFloat("MusicVolume");
             }
             else
             {
-                continue;
+                s.source = sourceSounds;
             }
         }
     }
 
     private void Start()
     {
-        sourceMusic.Play("Theme");
-
         foreach (Sound s in sounds)
         {
             if (s.name == "Theme")
             {
-                continue;
+                s.source.Loop = s.loop;
+
+                s.source.Volume = s.volume = PlayerPrefs.GetFloat("MusicVolume");
             }
             else
             {
@@ -67,6 +63,8 @@ public class AudioManager : MonoBehaviour
                 sourceSounds.Volume = s.volume = PlayerPrefs.GetFloat("SoundVolume");
             }
         }
+
+        sourceMusic.Play("Theme");
     }
 
     public void Play(string name)

@@ -23,6 +23,8 @@ public class LetterManager : MonoBehaviour
     private AlphabetManager alphabetManager;
     private UIAnimations animations;
 
+    public InterstitialAds ad;
+
     public void Initialize(AlphabetManager alphabet, UIAnimations uIAnimations)
     {
         alphabetManager = alphabet;
@@ -38,6 +40,7 @@ public class LetterManager : MonoBehaviour
 
     private void OnEnable()
     {
+        ad.ShowAd();
         currentLetterIndex = alphabetManager.currentLetterIndex;
 
         letterText.text = letters[currentLetterIndex];
